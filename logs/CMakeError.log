@@ -1,0 +1,732 @@
+Performing C SOURCE FILE Test SUPPORTS_LLD failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7918d && [1/2] Building C object CMakeFiles/cmTC_7918d.dir/src.c.o
+clang: warning: argument unused during compilation: '-fuse-ld=lld' [-Wunused-command-line-argument]
+[2/2] Linking C executable cmTC_7918d
+FAILED: cmTC_7918d 
+: && /usr/bin/clang-12 -fuse-ld=lld  CMakeFiles/cmTC_7918d.dir/src.c.o -o cmTC_7918d   && :
+clang: error: invalid linker name in argument '-fuse-ld=lld'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() {}
+Determining if the function res_servicename exists failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fe234 && [1/2] Building C object CMakeFiles/cmTC_fe234.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_fe234
+FAILED: cmTC_fe234 
+: && /usr/bin/clang-12 -DCHECK_FUNCTION_EXISTS=res_servicename  CMakeFiles/cmTC_fe234.dir/CheckFunctionExists.c.o -o cmTC_fe234   && :
+/usr/bin/ld: CMakeFiles/cmTC_fe234.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `res_servicename'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function res_servicename exists in the resolv failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5cd7a && [1/2] Building C object CMakeFiles/cmTC_5cd7a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_5cd7a
+FAILED: cmTC_5cd7a 
+: && /usr/bin/clang-12 -DCHECK_FUNCTION_EXISTS=res_servicename  CMakeFiles/cmTC_5cd7a.dir/CheckFunctionExists.c.o -o cmTC_5cd7a  -lresolv && :
+/usr/bin/ld: CMakeFiles/cmTC_5cd7a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `res_servicename'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if files sys/sockio.h exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8dcce && [1/2] Building C object CMakeFiles/cmTC_8dcce.dir/HAVE_SYS_SOCKIO_H.c.o
+FAILED: CMakeFiles/cmTC_8dcce.dir/HAVE_SYS_SOCKIO_H.c.o 
+/usr/bin/clang-12   -fPIE -MD -MT CMakeFiles/cmTC_8dcce.dir/HAVE_SYS_SOCKIO_H.c.o -MF CMakeFiles/cmTC_8dcce.dir/HAVE_SYS_SOCKIO_H.c.o.d -o CMakeFiles/cmTC_8dcce.dir/HAVE_SYS_SOCKIO_H.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKIO_H.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKIO_H.c:2:10: fatal error: 'sys/sockio.h' file not found
+#include <sys/sockio.h>
+         ^~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <sys/sockio.h>
+
+
+int main(void){return 0;}
+
+Determining if files socket.h exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3cadf && [1/2] Building C object CMakeFiles/cmTC_3cadf.dir/HAVE_SOCKET_H.c.o
+FAILED: CMakeFiles/cmTC_3cadf.dir/HAVE_SOCKET_H.c.o 
+/usr/bin/clang-12   -fPIE -MD -MT CMakeFiles/cmTC_3cadf.dir/HAVE_SOCKET_H.c.o -MF CMakeFiles/cmTC_3cadf.dir/HAVE_SOCKET_H.c.o.d -o CMakeFiles/cmTC_3cadf.dir/HAVE_SOCKET_H.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CheckIncludeFiles/HAVE_SOCKET_H.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CheckIncludeFiles/HAVE_SOCKET_H.c:2:10: fatal error: 'socket.h' file not found
+#include <socket.h>
+         ^~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <socket.h>
+
+
+int main(void){return 0;}
+
+Determining if files stropts.h exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0563f && [1/2] Building C object CMakeFiles/cmTC_0563f.dir/HAVE_STROPTS_H.c.o
+FAILED: CMakeFiles/cmTC_0563f.dir/HAVE_STROPTS_H.c.o 
+/usr/bin/clang-12   -fPIE -MD -MT CMakeFiles/cmTC_0563f.dir/HAVE_STROPTS_H.c.o -MF CMakeFiles/cmTC_0563f.dir/HAVE_STROPTS_H.c.o.d -o CMakeFiles/cmTC_0563f.dir/HAVE_STROPTS_H.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CheckIncludeFiles/HAVE_STROPTS_H.c:2:10: fatal error: 'stropts.h' file not found
+#include <stropts.h>
+         ^~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_TYPE_SOCKET failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0b16a && [1/2] Building C object CMakeFiles/cmTC_0b16a.dir/src.c.o
+FAILED: CMakeFiles/cmTC_0b16a.dir/src.c.o 
+/usr/bin/clang-12 -DHAVE_TYPE_SOCKET -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -std=c11 -MD -MT CMakeFiles/cmTC_0b16a.dir/src.c.o -MF CMakeFiles/cmTC_0b16a.dir/src.c.o.d -o CMakeFiles/cmTC_0b16a.dir/src.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/src.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/src.c:26:4: error: use of undeclared identifier 'SOCKET'
+                        SOCKET var_exists;
+                        ^
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/src.c:27:10: error: use of undeclared identifier 'var_exists'
+                        (void)var_exists;
+                              ^
+2 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			SOCKET var_exists;
+			(void)var_exists;
+			return 0;
+		}
+	
+Determining if the SO_NONBLOCK exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6c558 && [1/2] Building C object CMakeFiles/cmTC_6c558.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_6c558.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_6c558.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_6c558.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_6c558.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'SO_NONBLOCK'
+  return ((int*)(&SO_NONBLOCK))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SO_NONBLOCK
+  return ((int*)(&SO_NONBLOCK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the bitncmp exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fb91e && [1/2] Building C object CMakeFiles/cmTC_fb91e.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_fb91e.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_fb91e.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_fb91e.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_fb91e.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'bitncmp'
+  return ((int*)(&bitncmp))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef bitncmp
+  return ((int*)(&bitncmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the closesocket exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e3f00 && [1/2] Building C object CMakeFiles/cmTC_e3f00.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_e3f00.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_e3f00.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_e3f00.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_e3f00.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'closesocket'
+  return ((int*)(&closesocket))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CloseSocket exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_afc14 && [1/2] Building C object CMakeFiles/cmTC_afc14.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_afc14.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_afc14.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_afc14.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_afc14.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'CloseSocket'
+  return ((int*)(&CloseSocket))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CloseSocket
+  return ((int*)(&CloseSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the inet_net_pton exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ffeeb && [1/2] Building C object CMakeFiles/cmTC_ffeeb.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ffeeb
+FAILED: cmTC_ffeeb 
+: && /usr/bin/clang-12  -rdynamic CMakeFiles/cmTC_ffeeb.dir/CheckSymbolExists.c.o -o cmTC_ffeeb   && :
+/usr/bin/ld: CMakeFiles/cmTC_ffeeb.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x19): undefined reference to `inet_net_pton'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_net_pton
+  return ((int*)(&inet_net_pton))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ioctlsocket exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9cc11 && [1/2] Building C object CMakeFiles/cmTC_9cc11.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_9cc11.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_9cc11.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_9cc11.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_9cc11.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'ioctlsocket'
+  return ((int*)(&ioctlsocket))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctlsocket
+  return ((int*)(&ioctlsocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the IoctlSocket exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ce6ec && [1/2] Building C object CMakeFiles/cmTC_ce6ec.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_ce6ec.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_ce6ec.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_ce6ec.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_ce6ec.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'IoctlSocket'
+  return ((int*)(&IoctlSocket))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IoctlSocket
+  return ((int*)(&IoctlSocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7eb8c && [1/2] Building C object CMakeFiles/cmTC_7eb8c.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_7eb8c.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_7eb8c.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_7eb8c.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_7eb8c.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'strcmpi'; did you mean 'strcmp'?
+  return ((int*)(&strcmpi))[argc];
+                  ^~~~~~~
+                  strcmp
+/usr/include/string.h:156:12: note: 'strcmp' declared here
+extern int strcmp (const char *__s1, const char *__s2)
+           ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the stricmp exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3ef02 && [1/2] Building C object CMakeFiles/cmTC_3ef02.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_3ef02.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_3ef02.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_3ef02.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_3ef02.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'stricmp'
+  return ((int*)(&stricmp))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncmpi exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9153f && [1/2] Building C object CMakeFiles/cmTC_9153f.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_9153f.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_9153f.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_9153f.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_9153f.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'strncmpi'; did you mean 'strncmp'?
+  return ((int*)(&strncmpi))[argc];
+                  ^~~~~~~~
+                  strncmp
+/usr/include/string.h:159:12: note: 'strncmp' declared here
+extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+           ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strnicmp exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_064e8 && [1/2] Building C object CMakeFiles/cmTC_064e8.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_064e8.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_064e8.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_064e8.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_064e8.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'strnicmp'; did you mean 'strncmp'?
+  return ((int*)(&strnicmp))[argc];
+                  ^~~~~~~~
+                  strncmp
+/usr/include/string.h:159:12: note: 'strncmp' declared here
+extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+           ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strnicmp
+  return ((int*)(&strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random_buf exist failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e4c51 && [1/2] Building C object CMakeFiles/cmTC_e4c51.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_e4c51.dir/CheckSymbolExists.c.o 
+/usr/bin/clang-12 -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE -MD -MT CMakeFiles/cmTC_e4c51.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_e4c51.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_e4c51.dir/CheckSymbolExists.c.o -c '/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c'
+/home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:27:19: error: use of undeclared identifier 'arc4random_buf'
+  return ((int*)(&arc4random_buf))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random_buf
+  return ((int*)(&arc4random_buf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function __system_property_get exists failed with the following output:
+Change Dir: /home/yds/桌面/homework/mujoco_mpc/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_079a2 && [1/2] Building C object CMakeFiles/cmTC_079a2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_079a2
+FAILED: cmTC_079a2 
+: && /usr/bin/clang-12 -DCHECK_FUNCTION_EXISTS=__system_property_get  CMakeFiles/cmTC_079a2.dir/CheckFunctionExists.c.o -o cmTC_079a2   && :
+/usr/bin/ld: CMakeFiles/cmTC_079a2.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `__system_property_get'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Ubuntu clang version 12.0.1-19ubuntu3
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
